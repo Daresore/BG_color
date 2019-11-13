@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta charset="UTF-8">
+    <title>BG_generate</title>
+    <style>
+        .buton {
+            width: 380px;
+            height: 150px;
+            msrgin: 42px 0px 0px 0px;
+            border-radius: 25px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-size: 25px;
+            cursor: pointer;
+            border: solid 0.7px black;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-size: 30px;
+            cursor: pointer;
+        }
+        .buton:hover {
+            background: white;
+        }
+    </style>
+</head>
+<body style="margin-top: 43vh; height: 100px; display: flex; justify-content: center;  align-items: center">
+<div style="display: flex; justify-content: center; align-items: center;">
+    <div class="buton" onclick="generate()">GENERATE BACKGROUND</div>
+</div>
+</body>
+<script>
+    function generate() {
+       red = Math.floor(Math.random()*255)
+        green = Math.floor(Math.random()*255)
+        blue = Math.floor(Math.random()*255)
+        document.body.style.backgroundColor = "rgb("+red+","+green+","+blue+")"
+    }
+</script>
+</html>
